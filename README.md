@@ -35,7 +35,7 @@ Now head to our [test account dashboard](https://r-wallet-base-3.vercel.app/dash
 
 *How Does It Work?*
 
-NFT owners can utilize our dapp to list their NFTs for rent. In turn, our SC wallet users can rent these for a specified duration. Asset owners can be confident in receiving payment and having their assets returned post-lease, all thanks to our robust smart contracts.
+NFT owners can utilize our dapp to list their NFTs for rent. In turn, our SC wallet users can rent these for a specified duration. Asset owners can be confident in receiving payment upfront and having their assets returned post-lease, all thanks to our robust smart contracts.
 
 How is this achieved? Our Smart Contract Wallet ensures the rented NFT remains within the renting account until the rental period concludes. When the rent is due, the NFT is directed solely to its rightful owner.
 
