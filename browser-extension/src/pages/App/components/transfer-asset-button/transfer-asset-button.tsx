@@ -3,6 +3,7 @@ import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import StoreIcon from '@mui/icons-material/Store';
 import { Avatar, Stack, Tooltip, Typography, useTheme } from '@mui/material';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
 import { useNavigate } from 'react-router-dom';
 
 const TransferAssetButton = () => {
@@ -16,12 +17,12 @@ const TransferAssetButton = () => {
           justifyContent="center"
           alignItems="center"
           spacing={'4px'}
-          sx={{ cursor: 'not-allowed', opacity: 0.5 }}
+          sx={{ cursor: 'not-allowed' }}
         >
-          <Avatar sx={{ bgcolor: theme.palette.primary.main }}>
+          <Avatar sx={{ bgcolor: '#00FA9A' }}>
             <StoreIcon />
           </Avatar>
-          <Typography variant="button">Buy</Typography>
+          <Typography variant="button">Market</Typography>
         </Stack>
       </Tooltip>
       <Stack
@@ -30,7 +31,7 @@ const TransferAssetButton = () => {
         spacing={'4px'}
         sx={{ cursor: 'pointer' }}
       >
-        <Avatar sx={{ bgcolor: theme.palette.primary.main }}>
+        <Avatar sx={{ bgcolor: '#4682B4' }}>
           <SendRoundedIcon
             onClick={() => navigate('/transfer-assets')}
             sx={{ transform: 'rotate(-45deg)', ml: '4px', mb: '6px' }}
@@ -43,12 +44,12 @@ const TransferAssetButton = () => {
           justifyContent="center"
           alignItems="center"
           spacing={'4px'}
-          sx={{ cursor: 'not-allowed', opacity: 0.5 }}
+          sx={{ cursor: 'not-allowed' }}
         >
-          <Avatar sx={{ bgcolor: theme.palette.primary.main }}>
-            <SwapHorizIcon />
+          <Avatar sx={{ bgcolor: 'pink' }}>
+            <GridViewRoundedIcon />
           </Avatar>
-          <Typography variant="button">Swap</Typography>
+          <Typography variant="button">Dashboard</Typography>
         </Stack>
       </Tooltip>
     </Stack>
