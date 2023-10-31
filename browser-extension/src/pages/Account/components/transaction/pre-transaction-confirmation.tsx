@@ -123,22 +123,19 @@ const PreTransactionConfirmationComponent: PreTransactionConfirmation = ({
     <>
       <CardContent>
         <Typography variant="h3" gutterBottom>
-          Dummy Component
+          Send Transaction
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          You can show as many steps as you want in this dummy component. You
-          need to call the function <b>onComplete</b> passed as a props to this
-          component. <br />
-          <br />
-          The function takes a modifiedTransactions & context as a parameter,
-          the context will be passed to your AccountApi when creating a new
-          account. While modifiedTransactions will be agreed upon by the user.
-          <br />
-          This Component is defined in exported in{' '}
+          You are about to send a transaction from your account.
+          If you are using a dapp <b>MAKE SURE IT'S TRUSTWORTHY!!</b><br/>
+          You can <b>CHECK TX METADATA</b> on the next screen.<br/><br/>
+          If it wasn't your intention to send it just hit <b>REJECT</b> on the next screen.<br />
+          You can add <b>Paymaster info</b> below. If you do not have one don't worry, just continue.<br/><br/>
+          Are you ready to proceed?
         </Typography>
-        <Typography variant="caption">
+        {/* <Typography variant="caption">
           trampoline/src/pages/Account/components/transaction/pre-transaction-confirmation.ts
-        </Typography>
+        </Typography> */}
         <Box sx={{ mt: 4, mb: 4 }}>
           <AddPaymasterAndData setPaymasterAndData={setPaymasterAndDataLocal} />
         </Box>

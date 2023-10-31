@@ -34,7 +34,7 @@ const AccountBalanceInfo = ({ address }: { address: string }) => {
     <Stack spacing={1} justifyContent="center" alignItems="center">
       {activeNetwork.baseAsset.image && (
         <img
-          height={40}
+          height={120}
           src={activeNetwork.baseAsset.image}
           alt={`${activeNetwork.baseAsset.name} asset logo`}
         />

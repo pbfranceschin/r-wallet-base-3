@@ -3,6 +3,7 @@ import {
   CardActions,
   CardContent,
   Typography,
+  Link
 } from '@mui/material';
 import { Stack } from '@mui/system';
 import React from 'react';
@@ -16,21 +17,23 @@ const Onboarding: OnboardingComponent = ({
     <Box sx={{ padding: 2 }}>
       <CardContent>
         <Typography variant="h3" gutterBottom>
-          Customisable Account Component
+          New Account
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          You can show as many steps as you want in this dummy component. You
-          need to call the function <b>onOnboardingComplete</b> passed as a
-          props to this component. <br />
-          <br />
-          The function takes a context as a parameter, this context will be
-          passed to your AccountApi when creating a new account.
-          <br />
-          This Component is defined in exported in{' '}
+          After creating a new account you can deploy it by clicking on the <b>'not deployed'</b> sign
+          and following the instructions onscreen, or simply by making your 1st transaction.<br /><br/>
+          rWallet Smart Account follows the ERC-4337 specification. That means it functions just like
+          a regular account except that it has added functionalities. With <b>rWallet</b> you can engage in
+          <b>safe</b> and <b>trustless</b> rental tx's involving NFT assets. You can also make gasless tx's
+          or pay for gas using stablecoins by using paymasters.<br/><br/>
+          To Learn more about these functionalities visit our{' '}
+          <Link href='https://github.com/pbfranceschin/r-wallet-base-3/blob/main/README.md'>
+            Web Page.          
+          </Link>
         </Typography>
-        <Typography variant="caption">
+        {/* <Typography variant="caption">
           trampoline/src/pages/Account/components/onboarding/index.ts
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions sx={{ pl: 4, pr: 4, width: '100%' }}>
         <Stack spacing={2} sx={{ width: '100%' }}>

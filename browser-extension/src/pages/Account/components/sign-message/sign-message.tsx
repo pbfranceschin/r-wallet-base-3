@@ -15,18 +15,12 @@ const SignMessage = ({
     <>
       <CardContent>
         <Typography variant="h3" gutterBottom>
-          Customaisable sign message Account Component
+          Signature Request
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          You can show as many steps as you want in this dummy component. You
-          need to call the function <b>onComplete</b> passed as a props to this
-          component. <br />
-          <br />
-          The function takes a context as a parameter, this context will be
-          passed to your AccountApi when creating a new account.
-          <br />
-          This Component is defined in exported in
-          trampoline/src/pages/Account/components/sign-message/index.ts
+          You were requested to sign a message. Always make sure you <b>KNOW EXACTLY</b> what you are signing
+          and trust that the source of the request is not ill-intentioned.<br/><br/>
+          Are you ready to proceed? 
         </Typography>
       </CardContent>
       <CardActions sx={{ pl: 4, pr: 4, width: '100%' }}>

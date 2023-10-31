@@ -6,6 +6,12 @@ import AccountInfo from '../../components/account-info';
 import Header from '../../components/header';
 import TransferAssetButton from '../../components/transfer-asset-button';
 import { useBackgroundSelector } from '../../hooks';
+import Onboarding from '../onboarding';
+import SignMessage from '../../../Account/components/sign-message';
+
+const onComplete = async(context: any) => {
+  console.log('test')
+}
 
 const Home = () => {
   const activeAccount = useBackgroundSelector(getActiveAccount);
@@ -14,6 +20,8 @@ const Home = () => {
     <Container sx={{ width: '62vw', height: '100vh' }}>
       <Header />
       <Card sx={{ ml: 4, mr: 4, mt: 2, mb: 2 }}>
+        {/* <SignMessage onComplete={onComplete} /> */}
+        {/* <Onboarding /> */}
         <CardContent>
           {activeAccount && <AccountInfo address={activeAccount}></AccountInfo>}
           <Box

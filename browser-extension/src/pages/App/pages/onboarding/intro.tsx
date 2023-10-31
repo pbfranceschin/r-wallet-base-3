@@ -37,12 +37,12 @@ const Intro = () => {
       >
         <CardContent>
           <Typography textAlign="center" variant="h3" gutterBottom>
-            Start your eth journey
+            Welcome to rWallet Smart Account!
           </Typography>
           <Typography textAlign="center" variant="body1" color="text.secondary">
-            Your smart contract account with unlimited possibilities,{' '}
-            <Link href="https://github.com/eth-infinitism/trampoline">
-              learn more
+            The best way to explore NFT rentals!{' '}
+            <Link href="https://github.com/pbfranceschin/r-wallet-base-3/blob/main/README.md">
+              Learn more.
             </Link>
           </Typography>
           <Box
@@ -59,7 +59,7 @@ const Intro = () => {
             color="text.secondary"
             gutterBottom
           >
-            Ethereum Foundation
+            by Australopitech
           </Typography>
         </CardContent>
         <CardActions sx={{ pl: 4, pr: 4, width: '100%' }}>
@@ -69,7 +69,7 @@ const Intro = () => {
               variant="contained"
               onClick={() => navigate('/accounts/new')}
             >
-              Create/recover new account
+              Create new account
             </PrimaryButton>
           </Stack>
         </CardActions>

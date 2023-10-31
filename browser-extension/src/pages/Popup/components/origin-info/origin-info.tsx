@@ -1,7 +1,7 @@
 import { Box, CardMedia, Paper, Typography } from '@mui/material';
 import React from 'react';
 import { PermissionRequest } from '../../../Background/services/provider-bridge';
-import logo from '../../../../assets/img/dapp_favicon_default@2x.png';
+import logo from '../../../../assets/img/logo.png';
 
 const OriginInfo = ({ permission }: { permission?: PermissionRequest }) => {
   if (!permission) return <></>;
