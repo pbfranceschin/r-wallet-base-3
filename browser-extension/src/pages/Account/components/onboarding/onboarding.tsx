@@ -22,9 +22,9 @@ const Onboarding: OnboardingComponent = ({
         <Typography variant="body1" color="text.secondary">
           After creating a new account you can deploy it by clicking on the <b>'not deployed'</b> sign
           and following the instructions onscreen, or simply by making your 1st transaction.<br /><br/>
-          rWallet Smart Account follows ERC-4337. That means it functions just like
-          a regular account except that it has added functionalities. With <b>rWallet</b> you can
-          <b>RENT NFT's</b> in a completely<b>SAFE</b> and <b>TRUSTLESS</b> manner.
+          <b>rWallet Smart Account</b> follows ERC-4337. That means it functions just like
+          a regular account except that it has added functionalities. With rWallet you can 
+          <b>RENT NFT's</b> in a completely <b>SAFE</b> and <b>TRUSTLESS</b> manner.
           You can also make gasless tx's or pay for gas using stablecoins by using paymasters.<br/><br/>
           To Learn more about these functionalities visit our{' '}
           <Link href='https://github.com/pbfranceschin/r-wallet-base-3/blob/main/README.md'>
